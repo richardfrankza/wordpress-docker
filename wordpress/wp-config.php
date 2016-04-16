@@ -1,8 +1,8 @@
 <?php
-define('DB_NAME', 'wordpress');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', "db:3306");
+define('DB_NAME', getenv('DB_NAME'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASS'));
+define('DB_HOST', getenv('DB_HOST'));
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
